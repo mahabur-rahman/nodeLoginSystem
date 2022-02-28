@@ -1,0 +1,26 @@
+{
+    "name": "fullstack",
+    "version": "1.0.0",
+    "description": "",
+    "main": "Magic.js",
+    "scripts": {
+        "start": "node app.js",
+        "dev": "nodemon app.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.26.0",
+        "body-parser": "^1.19.2",
+        "cookie-parser": "^1.4.6",
+        "cowsay": "^1.5.0",
+        "ejs": "^3.1.6",
+        "express": "^4.17.3",
+        "express-session": "^1.17.2",
+        "lodash": "^4.17.21",
+        "morgan": "^1.10.0",
+        "nodemon": "^2.0.15",
+        "uuid": "^8.3.2"
+    }
+}

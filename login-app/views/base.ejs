@@ -1,0 +1,32 @@
+<%- include('header') %>
+
+
+    <!-- form -->
+
+    <div class="container my-4">
+
+        <h1 class="text-center mb-5">
+            <%= title  %>
+        </h1>
+
+        <form action="/route/login" method="POST">
+            <div class="row">
+                <div class="col-5 mx-auto">
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="email" name="email">
+                        <span>Register email address</span>
+                        <% if(locals.logout) {%>
+                            <div class="alert alert-success text-center">
+                                <%= logout %>
+                            </div>
+                            <% }%>
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" placeholder="password" name="password">
+                        <button class="btn btn-primary mt-3" type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <%- include('footer') %>
